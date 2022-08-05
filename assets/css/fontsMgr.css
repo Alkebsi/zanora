@@ -1,0 +1,48 @@
+/*
+
+********************************************************
+
+Note: Please, before changing anything in this file,
+it's recommended to check the documentation.
+Moreover, Only Change What You Know or Save The
+Original File Somewhere In Your PC/Laptop.
+
+》~ Project: Zanora | HTML Personal Portfolio 
+》~ Version: v1.0.0
+》~ Author: MKebsi - https:/alkebsi.github.io/
+
+********************************************************
+
+*/
+
+
+@font-face
+{
+	src: url("fonts/Cairo-Black.ttf");
+	font-family: black;
+}
+@font-face
+{
+	src: url("fonts/Cairo-Bold.ttf");
+	font-family: bold;
+}
+@font-face
+{
+	src: url("fonts/Cairo-ExtraLight.ttf");
+	font-family: exLight;
+}
+@font-face
+{
+	src: url("fonts/Cairo-Light.ttf");
+	font-family: light;
+}
+@font-face
+{
+	src: url("fonts/Cairo-Regular.ttf");
+	font-family: regular;
+}
+@font-face
+{
+	src: url("fonts/Cairo-SemiBold.ttf");
+	font-family: sbold;
+}

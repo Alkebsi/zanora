@@ -1,0 +1,36 @@
+/*
+
+********************************************************
+
+Note: Please, before changing anything in this file,
+it's recommended to check the documentation.
+Moreover, Only Change What You Know or Save The
+Original File Somewhere In Your PC/Laptop.
+
+》~ Project: Zanora | HTML Personal Portfolio 
+》~ Version: v1.0.0
+》~ Author: MKebsi - https://alkebsi.github.io/
+
+********************************************************
+
+*/
+
+
+
+/*Colors*/
+:root
+{
+	--dark: #00101e;
+	--blue: #000078;
+	--light-blue: #004499;
+	--aqua: #00ffff;
+	--blue-grad: linear-gradient(135deg, #00ffff, #000078);
+	--green: #00ff00;
+	--white: #ffffff;
+	--black: #000000;
+	--shadow: 0 0 10px -5px #000000;
+	--shadow-inset: 0 0 10px -5px #000000 inset;
+	--light-shadow: 0 0 10px -5px #ffffff;
+	--light-shadow-inset: 0 0 10px -5px #ffffff inset;
+	
+}
