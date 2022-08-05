@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!--Head Tag-->
+	<head>
+		<!-- set the encoding of your site -->
+		<meta charset="utf-8">
+		<!--Page Title-->
+		<title>Zanora | HTML Personal Portfolio</title>
+		<!--Setting the site viewport to fit multiple screens-->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--Setting the color for the top bar of the browser-->
+		<meta name="theme-color" content="#00101e" id="topThemeColor"/>
+		<!--Grabbing the external stylesheet-->
+		<link rel="stylesheet" href="assets/css/dark.css" id="stylesheet" />
+		<link rel="stylesheet" href="assets/css/lib/aos.css" id="stylesheet" />
+		<!--Grabbing the logo-->
+		<link rel="icon" href="assets/img/logo.png" />
+	</head>
+	<body onload="Start()">
+		<!--the navigation bar - page header-->
+		<header id="header">
+			<nav id="nav-bar">
+				<div id="dashes" onclick="RPMgr()">
+					<div id="dash1" class="dash"></div>
+					<div id="dash2" class="dash"></div>
+					<div id="dash3" class="dash"></div>
+					<!--#dashes ends here-->
+				</div>
+				<!--the panels that shows up from the right side-->
+				<div id="right-panel">
+					<h1>Navigator</h1>
+					<div class="rp-link" id="home-link">
+						<button class="rp-link-title">Home Page</button>
+						<button class="rp-link-btn-light"
+							onclick="window.location = 'home-page.html'">
+							Light
+						</button>
+						<button class="rp-link-btn-dark" 
+							onclick="window.location = 'home-page-dark.html'">
+							Dark
+						</button>
+						<!--#home-link ends here-->
+					</div>
+					<div class="rp-link" id="cv1-link">
+						<button class="rp-link-title">CV Style1</button>
+						<button class="rp-link-btn-light"
+							onclick="window.location = 'CV.html'">
+							Light
+						</button>
+						<button class="rp-link-btn-dark" 
+							onclick="window.location = 'CV-dark.html'">
+							Dark
+						</button>
+						<!--#cv1-link ends here-->
+					</div>
+					<div class="rp-link" id="cv2-link">
+						<button class="rp-link-title">CV Style2</button>
+						<button class="rp-link-btn-light"
+							onclick="window.location = 'CV-2.html'">
+							Light
+						</button>
+						<button class="rp-link-btn-dark" 
+							onclick="window.location = 'CV-2-dark.html'">
+							Dark
+						</button>
+						<!--#cv2-link ends here-->
+					</div>
+					<div class="rp-link" id="blogs-link">
+						<button class="rp-link-title">Blog List/Grid</button>
+						<button class="rp-link-btn-light"
+							onclick="window.location = 'blogs.html'">
+							Light
+						</button>
+						<button class="rp-link-btn-dark" 
+							onclick="window.location = 'blogs-dark.html'">
+							Dark
+						</button>
+						<!--#blogs-link ends here-->
+					</div>
+					<div class="rp-link" id="blog-post-link">
+						<button class="rp-link-title">Blog Post</button>
+						<button class="rp-link-btn-light"
+							onclick="window.location = 'blog-post.html'">
+							Light
+						</button>
+						<button class="rp-link-btn-dark" 
+							onclick="window.location = 'blog-post-dark.html'">
+							Dark
+						</button>
+						<!--#blog-post-link ends here-->
+					</div>
+					<!--#right-panel ends here-->
+				</div>
+			</nav>
+		</header>
+		<!--the entire page's content-->
+		<main id="content">
+			<div id="firstElement">
+				<h1 class="light-blue">From Here We Started</h1>
+				<img src="assets/img/home/dark-cover.jpg" id="fe-cover-img" alt="image description"/>
+				<div>
+					<svg class="waves waves-opp" xmlns="http://www.w3.org/2000/svg" 
+						xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" 
+						preserveAspectRatio="none" shape-rendering="auto">
+						<defs>
+							<path id="gentle-wave"
+								d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+						</defs>
+						<g class="parallax">
+							<use xlink:href="#gentle-wave" x="48" y="0" style="fill:var(--white); opacity: 0.7;" />
+							<use xlink:href="#gentle-wave" x="48" y="3" style="fill:var(--white); opacity: 0.5;" />
+							<use xlink:href="#gentle-wave" x="48" y="5" style="fill:var(--white); opacity: 0.3;" />
+							<use xlink:href="#gentle-wave" x="48" y="7" style="fill:var(--white); opacity: 1;" />
+						</g>
+					</svg>
+					<!--#head-transition ends here-->
+				</div>
+				<!--#firstElement ends here-->
+			</div>
+			<!--Particles Manager-->
+			<div id="home-particles"></div>
+			
+			<!--1st Card Starts-->
+			<div class="cards-con card1-con">
+				<div class="card1 cards">
+					<h1 data-aos="fade-right">1</h1>
+					<h2 data-aos="fade-right">Form Scrach, We Create the Future</h2>
+					<p data-aos="fade-right">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+						sed do eiusmod tempor incididunt ut labore et dolore 
+						magna aliqua. Ut enim ad minim veniam, quis nostrud
+						exercitation ullamco laboris nisi ut aliquip ex ea 
+						commodo consequat.
+					</p>
+					<!--#card1 ends here-->
+				</div>
+				<div class="card1-project cards-project">
+					<img src="assets/img/home/proj1.jpg" class="proj-img card1-proj-img"
+						data-aos="fade-down" alt="image description"/>
+				</div>
+				<!--#card1-con ends here-->
+			</div>
+			<!--1st Card Ends-->
+			
+			<!--2nd Card Starts-->
+			<div class="cards-con card2-con">
+				<div class="card2 cards">
+					<h1 data-aos="fade-right">2</h1>
+					<h2 data-aos="fade-right">Detailes That Won't Be Seen From Others Are Our Choices</h2>
+					<p data-aos="fade-right">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+						sed do eiusmod tempor incididunt ut labore et dolore 
+						magna aliqua. Ut enim ad minim veniam, quis nostrud
+						exercitation ullamco laboris nisi ut aliquip ex ea 
+						commodo consequat.
+					</p>
+					<!--#card1 ends here-->
+				</div>
+				<div class="card2-project cards-project">
+					<img src="assets/img/home/proj2.jpg" class="proj-img card2-proj-img"
+						data-aos="fade-down" alt="image description"/>
+				</div>
+				<!--#card1-con ends here-->
+			</div>
+			<!--2nd Card Ends-->
+			
+			<!--3rd Card Starts-->
+			<div class="cards-con card1-con">
+				<div class="card1 cards">
+					<h1 data-aos="fade-right">3</h1>
+					<h2 data-aos="fade-right">Form Scrach, We Create the Future</h2>
+					<p data-aos="fade-right">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+						sed do eiusmod tempor incididunt ut labore et dolore 
+						magna aliqua. Ut enim ad minim veniam, quis nostrud
+						exercitation ullamco laboris nisi ut aliquip ex ea 
+						commodo consequat.
+					</p>
+					<!--#card1 ends here-->
+				</div>
+				<div class="card1-project cards-project">
+					<img src="assets/img/home/proj3.jpg" class="proj-img card1-proj-img"
+						data-aos="fade-down" alt="image description"/>
+				</div>
+				<!--#card1-con ends here-->
+			</div>
+			<!--3rd Card Ends-->
+			
+			<!--4th Card Starts-->
+			<div class="cards-con card2-con">
+				<div class="card2 cards">
+					<h1 data-aos="fade-right">4</h1>
+					<h2 data-aos="fade-right">Detailes That Won't Be Seen From Others Are Our Choices</h2>
+					<p data-aos="fade-right">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+						sed do eiusmod tempor incididunt ut labore et dolore 
+						magna aliqua. Ut enim ad minim veniam, quis nostrud
+						exercitation ullamco laboris nisi ut aliquip ex ea 
+						commodo consequat.
+					</p>
+					<!--#card1 ends here-->
+				</div>
+				<div class="card2-project cards-project">
+					<img src="assets/img/home/proj4.jpg" class="proj-img card2-proj-img"
+						data-aos="fade-down" alt="image description"/>
+				</div>
+				<!--#card1-con ends here-->
+			</div>
+			<!--4th Card Ends-->
+			
+			<!--5th Card Starts-->
+			<div class="cards-con card1-con">
+				<div class="card1 cards">
+					<h1 data-aos="fade-right">5</h1>
+					<h2 data-aos="fade-right">Form Scrach, We Create the Future</h2>
+					<p data-aos="fade-right">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+						sed do eiusmod tempor incididunt ut labore et dolore 
+						magna aliqua. Ut enim ad minim veniam, quis nostrud
+						exercitation ullamco laboris nisi ut aliquip ex ea 
+						commodo consequat.
+					</p>
+					<!--#card1 ends here-->
+				</div>
+				<div class="card1-project cards-project">
+					<img src="assets/img/home/proj5.jpg" class="proj-img card1-proj-img"
+						data-aos="fade-down" alt="image description"/>
+				</div>
+				<!--#card1-con ends here-->
+			</div>
+			<!--5th Card Ends-->
+			
+			<!--6th Card Starts-->
+			<div class="cards-con card2-con">
+				<div class="card2 cards">
+					<h1 data-aos="fade-right">6</h1>
+					<h2 data-aos="fade-right">Detailes That Won't Be Seen From Others Are Our Choices</h2>
+					<p data-aos="fade-right">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+						sed do eiusmod tempor incididunt ut labore et dolore 
+						magna aliqua. Ut enim ad minim veniam, quis nostrud
+						exercitation ullamco laboris nisi ut aliquip ex ea 
+						commodo consequat.
+					</p>
+					<!--#card1 ends here-->
+				</div>
+				<div class="card2-project cards-project">
+					<img src="assets/img/home/proj6.jpg" class="proj-img card2-proj-img"
+						data-aos="fade-down" alt="image description"/>
+				</div>
+				<!--#card1-con ends here-->
+			</div>
+			<!--6th Card Ends-->
+			
+			<!--Newaletter subscription card-->
+			<div id="nl-card" data-aos="fade-right">
+				<h2>Newsletter</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+					sed do eiusmod tempor incididunt ut labore et dolore 
+					magna aliqua. Ut enim ad minim veniam, quis nostrud
+					exercitation ullamco laboris nisi ut aliquip ex ea 
+					commodo consequat.
+				</p>
+				<form action="blogs.html" method="post">
+					<input type="email" id="newsl-email" name="newsl-email"
+						required placeholder="jamaican.entho@zanora.com"/>
+					<input type="submit" id="submit" value="Submit"/>
+				</form>
+				<!--#nl-card ends here-->
+			</div>
+			<div id=last-btns-con" data-aos="fade-down">
+				<div id="cv-btn">
+					<button id="cmr-btn">Check My Résumé</button>
+					<button id="cv-online" onclick="window.location = 'CV-dark.html'">Go Online</button>
+					<button id="cv-offline" onclick="window.location = 'assets/cv.docx'">Download PDF</button>
+					<!--#cv-btn ends here-->
+				</div>
+				<button id="blog-btn" onclick="window.location = 'blogs-dark.html'"
+					data-aos="fade-down">Read an Article</button>
+				<!--#last-button-con ends here-->
+			</div>
+		</main>
+		<!--footer transition-->
+		<div>
+			<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+				viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+				<defs>
+					<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+				</defs>
+				<g class="parallax">
+					<use xlink:href="#gentle-wave" x="48" y="0" style="fill:var(--white); opacity: 0.7;" />
+					<use xlink:href="#gentle-wave" x="48" y="3" style="fill:var(--white); opacity: 0.5;" />
+					<use xlink:href="#gentle-wave" x="48" y="5" style="fill:var(--white); opacity: 0.3;" />
+					<use xlink:href="#gentle-wave" x="48" y="7" style="fill:var(--white); opacity: 1;" />
+				</g>
+			</svg>
+			<!--#footer-transition ends here-->
+		</div>
+		<footer id="footer">
+			<img src="assets/img/footer-logo.png" id="footer-logo" alt="image description" data-aos="zoom-in-down"/> 
+			<div id="footer-info">
+				<img src="assets/img/svg/location.svg" class="footer-icon" data-aos="zoom-in-down"/>
+				<p class="title" data-aos="fade-right">4968 The Full Address Line Example</p>
+				<img src="assets/img/svg/about.svg" class="footer-icon" data-aos="zoom-in-down"/>
+				<p class="title" data-aos="fade-right">help@zanora.com</p>
+				<img src="assets/img/svg/phone.svg" class="footer-icon" data-aos="zoom-in-down"/>
+				<p class="title" data-aos="fade-right">+1 973-464-5425</p>
+			</div>
+			<div class="footer-links-con" data-aos="zoom-in-right">
+				<h1>Home/Landing Pages</h1>
+				<a href="home-page.html">Light Theme</a>
+				<a href="home-page-dark.html">Dark Theme</a>
+			</div>
+			<div class="footer-links-con" data-aos="zoom-in-right">
+				<h1>CV/Résumés</h1>
+				<a href="CV.html">Style 1 - Light Theme</a>
+				<a href="CV-dark.html">Style 1 - Dark Theme</a>
+				<a href="CV-2.html">Style 2 - Light Theme</a>
+				<a href="CV-2-dark.html">Style 2 - Dark Theme</a>
+			</div>
+			<div class="footer-links-con" data-aos="zoom-in-right">
+				<h1>Blogs - Blog Grides/Lists</h1>
+				<a href="blogs.html">Light Theme</a>
+				<a href="blogs-dark.html">Dark Theme</a>
+			</div>
+			<div class="footer-links-con" data-aos="zoom-in-right">
+				<h1>Blog Posts/Detailes</h1>
+				<a href="blog-post.html">Light Theme</a>
+				<a href="blog-post-dark.html">Dark Theme</a>
+			</div>
+			<br/>
+		</footer>
+		<!--Grabbing the external Javascript Files-->
+		<script src="assets/js/lib/aos.js"></script>
+		<script src="assets/js/lib/particles.js"></script>
+		<script src="assets/js/homeParticlesMgr.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html> 

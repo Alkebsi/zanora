@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!--Head Tag-->
+	<head>
+		<!-- set the encoding of your site -->
+		<meta charset="utf-8">
+		<!--Page Title-->
+		<title>Zanora | HTML Personal Portfolio</title>
+		<!--Setting the site viewport to fit multiple screens-->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--Setting the color for the top bar of the browser-->
+		<meta name="theme-color" content="#55ffff" id="topThemeColor"/>
+		<!--Grabbing the external stylesheet-->
+		<link rel="stylesheet" href="assets/css/main.css" id="stylesheet" />
+		<link rel="stylesheet" href="assets/css/lib/aos.css" id="stylesheet" />
+		<!--Grabbing the logo-->
+		<link rel="icon" href="assets/img/logo.png" />
+	</head>
+	<body onload="Start()">
+		<!--the navigation bar - page header-->
+		<header id="header">
+			<nav id="nav-bar">
+				<div id="dashes" onclick="RPMgr()">
+					<div id="dash1" class="dash"></div>
+					<div id="dash2" class="dash"></div>
+					<div id="dash3" class="dash"></div>
+					<!--#dashes ends here-->
+				</div>
+				<!--the panels that shows up from the right side-->
+				<div id="right-panel">
+					<h1>Navigator</h1>
+					<div class="rp-link" id="home-link">
+						<button class="rp-link-title">Home Page</button>
+						<button class="rp-link-btn-light"
+							onclick="window.location = 'home-page.html'">
+							Light
+						</button>
+						<button class="rp-link-btn-dark" 
+							onclick="window.location = 'home-page-dark.html'">
+							Dark
+						</button>
+						<!--#home-link ends here-->
+					</div>
+					<div class="rp-link" id="cv1-link">
+						<button class="rp-link-title">CV Style1</button>
+						<button class="rp-link-btn-light"
+							onclick="window.location = 'CV.html'">
+							Light
+						</button>
+						<button class="rp-link-btn-dark" 
+							onclick="window.location = 'CV-dark.html'">
+							Dark
+						</button>
+						<!--#cv1-link ends here-->
+					</div>
+					<div class="rp-link" id="cv2-link">
+						<button class="rp-link-title">CV Style2</button>
+						<button class="rp-link-btn-light"
+							onclick="window.location = 'CV-2.html'">
+							Light
+						</button>
+						<button class="rp-link-btn-dark" 
+							onclick="window.location = 'CV-2-dark.html'">
+							Dark
+						</button>
+						<!--#cv2-link ends here-->
+					</div>
+					<div class="rp-link" id="blogs-link">
+						<button class="rp-link-title">Blog List/Grid</button>
+						<button class="rp-link-btn-light"
+							onclick="window.location = 'blogs.html'">
+							Light
+						</button>
+						<button class="rp-link-btn-dark" 
+							onclick="window.location = 'blogs-dark.html'">
+							Dark
+						</button>
+						<!--#blogs-link ends here-->
+					</div>
+					<div class="rp-link" id="blog-post-link">
+						<button class="rp-link-title">Blog Post</button>
+						<button class="rp-link-btn-light"
+							onclick="window.location = 'blog-post.html'">
+							Light
+						</button>
+						<button class="rp-link-btn-dark" 
+							onclick="window.location = 'blog-post-dark.html'">
+							Dark
+						</button>
+						<!--#blog-post-link ends here-->
+					</div>
+					<!--#right-panel ends here-->
+				</div>
+			</nav>
+		</header>
+		<!--the entire page's content-->
+		<main id="content">
+			<div id="blog-cover1">
+				<!--This sets the gradient of the social media icons-->
+				<svg height="0px">
+					<defs>
+						<linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+							<stop offset="0%"
+								style="stop-color:var(--aqua);stop-opacity:1" />
+							<stop offset="100%"
+								style="stop-color:var(--light-blue);stop-opacity:1" />
+							</linearGradient>
+					</defs>
+				</svg>
+				<!--Title-->
+				<h1 class="light-blue">The Next Generation of Website Development</h1>
+				<!--Subtitle-->
+				<h2 class="light-blue">How the website would look like 2 years ahead?</h2>
+				<!--Social Media Links and Contact Information-->
+				<a href="https://www.facebook.com/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" 
+					xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class="social-media-icon" viewBox="0 0 48 48"><g>
+					<path d="M46,0H2C0.89543,0,0,0.89543,0,2v44c0,1.10457,0.89543,2,2,2h23.63829V29.4119h-6.25529v-7.24417h6.25529
+						v-5.34235c0-6.19977,3.78661-9.57566,9.31723-9.57566c2.64922,0,4.92609,0.19724,5.58963,0.2854v6.47912l-3.83577,0.00174
+						c-3.00786,0-3.59026,1.42929-3.59026,3.52668v4.62507h7.17347l-0.93401,7.24417h-6.23946V48H46c1.10457,0,2-0.89543,2-2V2
+						C48,0.89543,47.10457,0,46,0z"/>
+				</g></svg></a>
+				<a href="https://pinterest.com/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" 
+					xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class="social-media-icon" viewBox="0 0 48 48"><g>
+					<path d="M24,0C10.7,0,0,10.7,0,24c0,10.2,6.3,18.9,15.3,22.3c-0.2-1.9-0.4-4.8,0.1-6.9c0.4-1.9,2.8-11.9,2.8-11.9
+						s-0.7-1.4-0.7-3.6c0-3.3,1.9-5.8,4.3-5.8c2,0,3,1.5,3,3.4c0,2.1-1.3,5.1-2,8c-0.6,2.4,1.2,4.3,3.6,4.3c4.3,0,7.5-4.5,7.5-11
+						c0-5.7-4.1-9.8-10-9.8c-6.8,0-10.8,5.1-10.8,10.4c0,2.1,0.8,4.3,1.8,5.5c0.2,0.2,0.2,0.4,0.2,0.7c-0.2,0.8-0.6,2.4-0.7,2.7
+						c-0.1,0.4-0.3,0.5-0.8,0.3c-3-1.4-4.9-5.8-4.9-9.3c0-7.6,5.5-14.5,15.9-14.5c8.3,0,14.8,5.9,14.8,13.9c0,8.3-5.2,14.9-12.5,14.9
+						c-2.4,0-4.7-1.3-5.5-2.8c0,0-1.2,4.6-1.5,5.7c-0.5,2.1-2,4.7-3,6.3c2.2,0.7,4.6,1.1,7.1,1.1c13.3,0,24-10.7,24-24
+						C48,10.7,37.3,0,24,0z"/>
+				</g></svg></a>
+				<a href="https://twitter.com/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+					xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class="social-media-icon" viewBox="0 0 48 48"><g >
+					<path d="M48,9.1c-1.8,0.8-3.7,1.3-5.7,1.6c2-1.2,3.6-3.1,4.3-5.4c-1.9,1.1-4,1.9-6.3,2.4c-1.8-1.9-4.4-3.1-7.2-3.1
+						c-5.4,0-9.8,4.4-9.8,9.8c0,0.8,0.1,1.5,0.3,2.2C15.5,16.2,8.2,12.3,3.3,6.3C2.5,7.8,2,9.4,2,11.2c0,3.4,1.7,6.4,4.4,8.2
+						c-1.6-0.1-3.1-0.5-4.5-1.2c0,0,0,0.1,0,0.1c0,4.8,3.4,8.8,7.9,9.7c-0.8,0.2-1.7,0.3-2.6,0.3c-0.6,0-1.3-0.1-1.9-0.2
+						c1.3,3.9,4.9,6.8,9.2,6.8c-3.4,2.6-7.6,4.2-12.2,4.2c-0.8,0-1.6,0-2.3-0.1c4.4,2.8,9.5,4.4,15.1,4.4c18.1,0,28-15,28-28
+						c0-0.4,0-0.9,0-1.3C45,12.8,46.7,11.1,48,9.1z"/>
+				</g></svg></a>
+				<!--#blog-cover ends here-->
+			</div>
+			<!--the writer of the blog, date and reading time-->
+			<div id="blog-info" data-aos="fade-down">
+				<img src="assets/img/blog/writer.jpg" id="author-img" alt="image description"/> 
+				<h2 id="blog-author">MKebsi</h2>
+				<p id="blog-date"><i>Fab 22, 2022</i></p>
+				<p id="blog-reading-time"><i>7 min read</i></p>
+				<!--#blog-info ends here-->
+			</div>
+			<!--the article itself-->
+			<article id="blog-article" data-aos="fade-right">
+				<p>
+					Websites are are widely used among all the ages. 
+					People from all over the world know the standard 
+					form of websites (like the one you are visiting now), 
+					but the coming generation is full of surprising things 
+					that'll never be expected. So, 3D amazing graphics 
+					are the most exciting things ever, and they become 
+					available online with lots of features that blows the 
+					mind. No one expected that browsers will render 3D! 
+					But not even this, they are also able to work with AR & 
+					VR. Anyway, what are these technologies and how 
+					they work? Keep on to know that.
+				</p>
+				<img src="assets/img/blog/qmark.jpg" class="blog-img" 
+					data-aos="fade-up" alt="image description"/>
+				<p class="blog-img-source"
+					data-aos="fade-down"><a href="https://pixabay.com"><i>@pixabay.com</i></a></p>
+				<h1 data-aos="fade-right">What Is WebGL?</h1>
+				<p>
+					As mentioned in Wikipedia, it is the abbreviation of the
+					phrase Web Graphics Library which allows users to 
+					render 2D and 3D graphics in the site. It is a Javascript 
+					API that will render "3D" into any suitable browser. The
+					browser's fully featuring WebGL are nearly every new 
+					version of any browser with the consideration of a 
+					good graphics card, but also mobile devices are 
+					supporting WebGL which means that you don't need to 
+					worry about your graphics card.
+				</p>
+				<h1 data-aos="fade-right">How Can Website Developers Use It?</h1>
+				<p>
+					Of course, you are thinking how can people use it, and 
+					how the results look like. This is why I am writing this 
+					article. Mainly, WebGL API is hard to deal with as a 
+					Javascript developer, but there are always some great
+					people who work to let us use those techniques easily
+					(i.e. they create libraries). After all, the well-known 
+					libraries and programs used for making a 3D web app are:
+				</p>
+				<h2 data-aos="fade-right">Three.js</h2>
+				<img src="assets/img/blog/threejs.jpg" class="blog-img" 
+					data-aos="fade-up" alt="image description"/>
+				<p class="blog-img-source"
+					data-aos="fade-down"><a href="https://threejs.org/"><i>@Three.js Official Site</i></a></p>
+				<p>
+					This library is a simple visualization library (as
+					Visartech cited in Medium), but, anyhow, I 
+					prefer it the most between others. It offers some 
+					great abilities that can be used to make many unique 
+					3D renders inside the web app. I used it in many of 
+					my own projects, and many others, like Bruno, made an 
+					outstanding sites with Three.js. Ricardo Cabello 
+					(Mr.doob) is the main author or developer of this great 
+					library. It was first published to Github in 2010, and until
+					today, it is in the same place. It's an open source library
+					under the MIT License, and it's completely free. It has 
+					many great features, and those are some of them.
+				</p>
+				<img src="assets/img/blog/threejsElement.jpg" class="blog-img" 
+					data-aos="fade-up" alt="image description"/>
+				<p class="blog-img-source"
+					data-aos="fade-down"><i>A screenshot for Three.js editor</i></p>
+				<h3 data-aos="fade-right">Features</h3>
+				<ul>
+					<li>
+						<b>Effects:</b> like anaglyph, cross-eyed, 
+						and parallax barrier,
+					</li>
+					<li>
+						<b>Scenes:</b> to manage your 3D elements
+						 under one scene or more,
+					</li>
+					<li>
+						<b>Cameras:</b> and it really offers some great
+						 types such as perspective and orthographic 
+						cameras with amazing controllers,
+					</li>
+					<li>
+						<b>Animation:</b> where it has armatures, 
+						forward kinematics, inverse kinematics, morph, 
+						and keyframes,
+					</li>
+					<li>
+						<b>Lights:</b> ambient, direction, point, and 
+						spot lights, and it is able to cast shadow,
+					</li>
+					<li>
+						<b>Materials:</b> Lambert, Phong, smooth 
+						shading, textures, and many more,
+					</li>
+					<li>
+						<b>Shaders:</b> lens flare, depth pass, and 
+						extensive post-processing library with the full 
+						accessibility to OpenGL Shading Language (GLSL),
+					</li>
+					<li>
+						<b>Objects:</b> meshes, particles, sprites, lines, 
+						ribbons, many others,
+					</li>
+					<li>
+						<b>Geometry:</b> plane, cube, sphere, torus, and 
+						many of other 3D geometries,
+					</li>
+					<li>
+						<b>Utilities:</b> full set of time and 3D math functions
+						including frustum, matrix, quaternion, UVs, and more,
+					</li>
+					<li>
+						<b>Export and import:</b> utilities to create 
+						Three.js-compatible JSON files from within: Blender, 
+						openCTM, FBX, Max, OBJ, and some others,
+					</li>
+					<li>
+						<b>Virtual and Augmented Reality (VR & AR)</b> 
+						via WebXR, and
+					</li>
+					<li>
+						Many many other features.
+					</li>
+				</ul>
+				<h2 data-aos="fade-right">PlayCanvas</h2>
+				<img src="assets/img/blog/playcanvas.jpg" class="blog-img" 
+					data-aos="fade-up" alt="image description"/>
+				<p class="blog-img-source"
+					data-aos="fade-down"><a href="https://playcanvas.com/"><i>@PlayCanvas Official Site</i></a></p>
+				<p>
+					PlayCanvas (as mentioned in Wikipedia) is an open-source
+					3D game engine/ interactive 3D application engine 
+					alongside a proprietary cloud-hosted creation platform 
+					that allows for simultaneous editing from multiple 
+					computers via a browser-based interface. It is mainly 
+					used for games, which is not that strong in three.js, and 
+					sophisticated web interactivity UX. It is a well-made library
+					that is more likely to be used as a standalone software. 
+					And, like three.js, it works with only Javascript and WebGL 
+					API. I didn't really used this library, but others used it and
+					made some amazing games.
+				</p>
+				<img src="assets/img/blog/playcanvasElement.gif" class="blog-img" 
+					data-aos="fade-up" alt="image description"/>
+				<p class="blog-img-source"
+					data-aos="fade-down"><i>How it looks while working.</i></p>
+				<h3 data-aos="fade-right">Features</h3>
+				<p>
+					As it can be described in easy way. It has every feature 
+					Three.js has, but this one works more likely as a 
+					standalone software (as mentioned above). It has 
+					something called "Collaborative Real-Time Editor". So,
+					this way, you will be enforced to have a good graphic card
+					to work on, but fortunately, the final result works on any
+					device depending on the graphics settings you set in
+					your project. It is made for teamwork. So if you are planning 
+					to work with a team, PlayCanvas is the best for you. 
+					This one was used from many big companies like Disney, 
+					but you should bear in mind that it charges for 50$ monthly. 
+					Any way it is an open source project hosted in Github, too 
+					which is great since you'll be able to learn it first then invest 
+					in it.
+				</p>
+				<h2 data-aos="fade-right">Babylon.js</h2>
+				<img src="assets/img/blog/babylon.jpg" class="blog-img" 
+					data-aos="fade-up" alt="image description"/>
+				<p class="blog-img-source"
+					data-aos="fade-down"><a href="https://babylonjs.com/"><i>@Babylon.js Official Site</i></a></p>
+				<p>
+					It is a real time 3D engine using a JavaScript 
+					library for displaying 3D graphics in a web browser 
+					via HTML5 (as cited in Wikipedia). It is very 
+					comparable to PlayCanvas, but it has a bit less advanced 
+					user Interface in their editor. On the other hand, it is free
+					and that is why many people use it. I think I can't say more 
+					about this library/program since it has all the features
+					mentioned above, and it is free.
+				</p>
+				<h2 data-aos="fade-right">Unity</h2>
+				<img src="assets/img/blog/unity.jpg" class="blog-img" 
+					data-aos="fade-up" alt="image description"/>
+				<p class="blog-img-source"
+					data-aos="fade-down"><a href="https://unity.com/"><i>@Unity Technologies Official Site</i></a></p>
+				<p>
+					It is a separated software made by C# & C++. 
+					It is mainly used for multiple platform games 
+					development, which allows developers to make one 
+					game and just render it for IOS, Android, Console, 
+					Windows and Mac. It used to support Javascript, 
+					but it is better for you to learn C# with tons of tutorials
+					online. It is well-known all over the world because of its 
+					simple nature. Anyone can make something great form 
+					the first week of learning. Additionally, it has a free 
+					version with no limitations on its abilities alongside the 
+					Plus and Pro versions. It can make nearly anything with
+					3D, and I include it here since it can render an HTML5 
+					game/app that can be published online, but as it can 
+					create a high-quality 3D renderer, it can't work on mobile
+					devices.
+				</p>
+				<p class="quote">
+					Note that Unity WebGL content is not currently 
+					supported on mobile devices. It may still work, especially
+					on high-end devices, but many current devices are not
+					powerful enough and don’t have enough memory to 
+					support Unity WebGL content well. For this reason, Unity 
+					WebGL shows a warning message when trying to load 
+					content on mobile browsers (which can be disabled if 
+					needed).
+					<a href="https://https/docs.unity3d.com/Manual/webgl-browsercompatibility.html">
+						<i>@Unity Manual</i>
+					</a>
+				</p>
+				<p>
+					But all this is not a big deal. You can build your app 
+					and then just render it in every device alone with a 
+					better experience for the user whether it is for flat 
+					screen or AR & VR.
+				</p>
+				<img src="assets/img/blog/unityElement.png" class="blog-img no-sh-bg" 
+					data-aos="fade-up" alt="image description"/>
+				<p class="blog-img-source"
+					data-aos="fade-down"><a href="https://unity.com/"><i>Unity's Work</i></a></p>
+				<p>
+					Its <b>features</b> are countless since it is a 
+					high-quality game engine, but once you know the 
+					games made with it, you may feel different about it. 
+					Games like The Room, Fall Gays, Monument Valley,
+					and 12 Minutes. Those are only the ones I remember
+					while there are million other great games over there. 
+					If you are interested to know more about it you can 
+					check their website. They have a list of the best games
+					of the year made with Unity.
+				</p>
+				<h1 data-aos="fade-right">Final Thoughts</h1>
+				<p>
+					After mentioning those libraries and programs, I can't 
+					say more than that my choice were Three.js and Unity
+					since they really fulfilled all my needs. I'm already working
+					on a project using Three.js while Unity was my main door 
+					to enter the world of programming and web development. 
+					But even PlayCanvas is a good choice that I can recommend 
+					you to go forward to it. Babylon.js is a good option, but you 
+					may find some difficulties on the way you use it.
+				</p>
+				<table class="table1 table" data-aos="fade-down">
+					<caption>To Sum All the Features up</caption>
+					<tr>
+						<th>Software</th>
+						<th>Capable Features</th>
+						<th>Price</th>
+						<th>Other Attitudes</th>
+					</tr>
+					<tr>
+						<th>Three.js</th>
+						<td>Very Capable</td>
+						<td>Free</td>
+						<td>Seems Good for Many</td>
+					</tr>
+					<tr>
+						<th>PlayCanvas</th>
+						<td>Extremely Capable</td>
+						<td>Free trail - $50</td>
+						<td>Good for Many</td>
+					</tr>
+					<tr>
+						<th>Babylon.js</th>
+						<td>Very Capable</td>
+						<td>Free</td>
+						<td>Good for Many</td>
+					</tr>
+					<tr>
+						<th>Unity Engine</th>
+						<td>Extremely Capable</td>
+						<td>Free - $250+</td>
+						<td>Amazing for Many Experts</td>
+					</tr>
+				</table>
+			</article>
+			<!--tag-->
+			<div id="blog-tags" data-aos="fade-up">
+				<h1 id="tags-title">Tags</h1>
+				<span>WebGL</span>
+				<span>Unity</span>
+				<span>Babylon.js</span>
+				<span>Three.js</span>
+				<span>Websites</span>
+				<span>3D online</span>
+				<span>The future of technology</span>
+				<span>...</span>
+				<span>WebGL</span>
+				<span>Unity</span>
+				<span>Babylon.js</span>
+				<span>Three.js</span>
+				<span>Websites</span>
+				<span>3D online</span>
+				<span>The future of technology</span>
+				<!--#blog-tags ends here-->
+			</div>
+			<!--Recommended Articles-->
+			<div id="blog-recoms" data-aos="fade-up">
+				<h1>Recommended for You</h1>
+				<a href="#"><div class="article-recom" data-aos="fade-right">
+					<img src="assets/img/blog/article1.jpg" class="blog-r-img" alt="image description"/>
+					<h3 class="blog-r-title">Should I Go Freelancing?</h3>
+					<p class="blog-r-des">
+						Working from home is a dream. So, I will describe 
+						freelancing widely and mention the most effective
+						jobs for freelancers. If you are excited, keep on.
+					</p>
+					<!--#article-recom ends here-->
+				</div></a>
+				<a href="#"><div class="article-recom" data-aos="fade-right">
+					<img src="assets/img/blog/article2.jpg" class="blog-r-img" alt="image description"/>
+					<h3 class="blog-r-title">Website Development Technologies</h3>
+					<p class="blog-r-des">
+						In this article, I will cover many aspects of websites 
+						development and how can you be a web developer. 
+						Web technologies are incredibly expanding for 
+						Front-End & Back-End to Full-Stack development. 
+						You will read all about websites once you enter.
+					</p>
+					<!--#article-recom ends here-->
+				</div></a>
+				<a href="#"><div class="article-recom" data-aos="fade-right">
+					<img src="assets/img/blog/article3.jpg" class="blog-r-img" alt="image description"/>
+					<h3 class="blog-r-title">Is a Website Important for Your Company?</h3>
+					<p class="blog-r-des">
+						In this article, I will describe why websites are so 
+						important for every company, and I'll also mention 
+						the ways you can have a website that is suitable for 
+						you with the best budget starting from fairly free to 
+						$100k.
+					</p>
+					<!--#article-recom ends here-->
+				</div></a>
+				<!--#blog-recoms ends here-->
+			</div>
+			<div id="blog-comments" data-aos="fade-up">
+				<h1 id="comments-title">Comments</h1>
+				<div id="old-cmnts-con">
+					<div class="old-cmnt">
+						<h2>Ali Gates</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+							sed do eiusmod tempor incididunt ut labore et dolore 
+							magna aliqua. Ut enim ad minim veniam, quis nostrud
+							exercitation ullamco laboris nisi ut aliquip ex ea 
+							commodo consequat.
+						</p>
+						<!--
+						---
+						Reply Starts
+						--
+						-->
+						<div class="old-cmnt-reply pc-element">
+							<h2>Susan Yenigun</h2>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+								sed do eiusmod tempor incididunt ut labore et dolore 
+								magna aliqua. Ut enim ad minim veniam, quis nostrud
+								exercitation ullamco laboris nisi ut aliquip ex ea 
+								commodo consequat.
+							</p>
+						<!--#old-cmnt-reply ends here-->
+						</div>
+						<button class="re-reply reply pc-element">Reply</button>
+						<!--
+						---
+						Reply end
+						--
+						-->
+						<!--..#old-cmnt ends here-->
+					</div>
+					<button class="reply">Reply</button>
+					<div class="old-cmnt">
+						<h2>Susan Yenigun</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+							sed do eiusmod tempor incididunt ut labore et dolore 
+							magna aliqua. Ut enim ad minim veniam, quis nostrud
+							exercitation ullamco laboris nisi ut aliquip ex ea 
+							commodo consequat.
+						</p>
+						<!--..#old-cmnt ends here-->
+					</div>
+					<button class="reply">Reply</button>
+					<div class="old-cmnt">
+						<h2>Handgun Slim</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+							sed do eiusmod tempor incididunt ut labore et dolore 
+							magna aliqua. Ut enim ad minim veniam, quis nostrud
+							exercitation ullamco laboris nisi ut aliquip ex ea 
+							commodo consequat.
+						</p>
+						<!--..#old-cmnt ends here-->
+					</div>
+					<button class="reply">Reply</button>
+					<div class="old-cmnt">
+						<h2>Owding Larsson</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+							sed do eiusmod tempor incididunt ut labore et dolore 
+							magna aliqua. Ut enim ad minim veniam, quis nostrud
+							exercitation ullamco laboris nisi ut aliquip ex ea 
+							commodo consequat.
+						</p>
+						<!--..#old-cmnt ends here-->
+					</div>
+					<button class="reply">Reply</button>
+					<!--#old-cmnts ends here-->
+				</div>
+				<br/><br/><br/>
+				<h2 data-aos="fade-right">Leave Yours...</h2>
+				<form id="comments-form" action="" method="post">
+					<label for="name" class="label" data-aos="fade-down">Name</label>
+					<label for="email" class="label" data-aos="fade-down">Email</label>
+					<input type="text" id="name" name="name" required placeholder="Jon Doe"
+						 data-aos="fade-down"/>
+					<input type="email" id="email" name="email" required 
+						placeholder="jondoe@zanora.com" data-aos="fade-down"/>
+					<div id="comment-con">
+						<label for="comment" class="label" data-aos="fade-down">Comment</label>
+						<textarea id="comment" name="commnet" placeholder="Hi guys, would you..."
+							data-aos="fade-down"></textarea>
+					</div>
+					<input type="submit" value="Submit" id="submit" data-aos="fade-down"/>
+				</form>
+				<!--#blog-comments ends here-->
+			</div>
+		</main>
+		<!--footer transition-->
+		<div>
+			<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+				viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+				<defs>
+					<path id="gentle-wave"
+						d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+				</defs>
+				<g class="parallax">
+					<use xlink:href="#gentle-wave" x="48" y="0" style="fill:var(--dark); opacity: 0.7;" />
+					<use xlink:href="#gentle-wave" x="48" y="3" style="fill:var(--dark); opacity: 0.5;" />
+					<use xlink:href="#gentle-wave" x="48" y="5" style="fill:var(--dark); opacity: 0.3;" />
+					<use xlink:href="#gentle-wave" x="48" y="7" style="fill:var(--dark); opacity: 1;" />
+				</g>
+			</svg>
+			<!--#footer-transition ends here-->
+		</div>
+		<footer id="footer">
+			<img src="assets/img/footer-logo.png" id="footer-logo" alt="image description" data-aos="zoom-in-down"/> 
+			<div id="footer-info">
+				<img src="assets/img/svg/location.svg" class="footer-icon" data-aos="zoom-in-down"/>
+				<p class="title" data-aos="fade-right">4968 The Full Address Line Example</p>
+				<img src="assets/img/svg/about.svg" class="footer-icon" data-aos="zoom-in-down"/>
+				<p class="title" data-aos="fade-right">help@zanora.com</p>
+				<img src="assets/img/svg/phone.svg" class="footer-icon" data-aos="zoom-in-down"/>
+				<p class="title" data-aos="fade-right">+1 973-464-5425</p>
+			</div>
+			<div class="footer-links-con" data-aos="zoom-in-right">
+				<h1>Home/Landing Pages</h1>
+				<a href="home-page.html">Light Theme</a>
+				<a href="home-page-dark.html">Dark Theme</a>
+			</div>
+			<div class="footer-links-con" data-aos="zoom-in-right">
+				<h1>CV/Résumés</h1>
+				<a href="CV.html">Style 1 - Light Theme</a>
+				<a href="CV-dark.html">Style 1 - Dark Theme</a>
+				<a href="CV-2.html">Style 2 - Light Theme</a>
+				<a href="CV-2-dark.html">Style 2 - Dark Theme</a>
+			</div>
+			<div class="footer-links-con" data-aos="zoom-in-right">
+				<h1>Blogs - Blog Grides/Lists</h1>
+				<a href="blogs.html">Light Theme</a>
+				<a href="blogs-dark.html">Dark Theme</a>
+			</div>
+			<div class="footer-links-con" data-aos="zoom-in-right">
+				<h1>Blog Posts/Detailes</h1>
+				<a href="blog-post.html">Light Theme</a>
+				<a href="blog-post-dark.html">Dark Theme</a>
+			</div>
+			<br/>
+		</footer>
+		<!--Grabbing the external Javascript Files-->
+		<script src="assets/js/lib/aos.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html> 
