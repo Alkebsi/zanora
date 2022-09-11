@@ -1,0 +1,9 @@
+<svg name="null" width="512px" height="512px" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" enable-background="new 0 0 76.266 56.69" version="1.1">
+<defs><radialGradient id="radialgradient1" cx="80.5338" cy="8.6792" r="488.3204" gradientUnits="userSpaceOnUse" spreadMethod="pad">
+<stop offset="0" style="stop-color:#00ffff;stop-opacity:1" />
+<stop offset="0.4067" style="stop-color:#00ffff;stop-opacity:1" />
+<stop offset="1" style="stop-color:#004499;stop-opacity:1" />
+</radialGradient>
+</defs>
+<path d=" M 256.7476,8.6792 C 159.5828,8.6792 80.5338,87.7282 80.5338,184.892 80.5338,305.4753 238.2278,482.4987 244.9418,489.9758 251.2481,496.9996 262.2585,496.9871 268.5533,489.9758 275.2673,482.4987 432.9613,305.4753 432.9613,184.892 432.9593,87.7282 353.9114,8.6792 256.7476,8.6792 M 256.7476,273.5496 C 207.8615,273.5496 168.0909,233.778 168.0909,184.892 168.0909,136.006 207.8625,96.2354 256.7476,96.2354 305.6326,96.2354 345.4032,136.0069 345.4032,184.8929 345.4032,233.7789 305.6326,273.5496 256.7476,273.5496 Z" style="fill:url(#radialgradient1);stroke:#0;stroke-width:0;stroke-opacity:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dashoffset:0;"/>
+</svg>
