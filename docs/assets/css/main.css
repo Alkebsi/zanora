@@ -1,0 +1,121 @@
+/*
+
+********************************************************
+
+Note: This is the documentation file's style file. You are 
+able to use for yourself, but this excludes the better 
+customizability in the real project
+
+》~ Project: Zanora | HTML Personal Portfolio - Docs
+》~ Version: v1.0.0
+》~ Author: MKebsi - https://mrkebsi.github.io/
+
+********************************************************
+
+*/
+@font-face
+{
+	src: url("Cairo-Black.ttf");
+	font-family: black;
+}
+@font-face
+{
+	src: url("Cairo-Regular.ttf");
+	font-family: light;
+}
+*
+{
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	font-family: light;
+	line-hight: 17px;
+	transition: all 1s;
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, b, .bold
+{
+	font-family: black;
+	line-height: 1.3em;
+	padding: 5px 0;
+	background: linear-gradient(135deg, #0aa, #000078);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent; 
+}
+a
+{
+	color: #099;
+	text-decoration: none;
+}
+#main-header
+{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 30%;
+	height: 100%;
+	padding: 30px;
+	background: #00101e;
+	box-shadow: 0 0 40px -8px #000;
+}
+#head-title
+{
+	width: 100%;
+}
+.head-links
+{
+	display: block;
+	margin: 10px 0;
+	font-size: 1.3em;
+	font-family: black;
+	color: #fff;
+	border-bottom: 1px solid #0ff;
+}
+#head-content
+{
+	margin-top: 10px; 
+	padding-left: 20px;
+	height: 50%;
+	overflow: auto;
+}
+main
+{
+	width: 70%;
+	padding: 30px 5%;
+	float: right;
+}
+main > header
+{
+	margin-top: 50px;
+	padding-top: 50px;
+}
+.image
+{
+	width: 100%;
+	margin: 10px 0;
+	border-radius: 20px;
+	box-shadow: 0 0 10px -5px black;
+}
+.body
+{
+	margin: 10px 0;
+}
+#first-body
+{
+	display: grid;
+	grid-template-columns: auto auto;
+	padding: 20px;
+	border-radius: 20px;
+	margin: 50px 0;
+	box-shadow: 0 0 20px -8px black;
+}
+#first-body > p
+{
+	padding: 10px;
+}
+#lastly
+{
+	margin: 100px 0 20px;
+	padding: 20px 0;
+	border-top: 1px solid aqua;
+}
